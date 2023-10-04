@@ -1,0 +1,16 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/AI-Image-Generator/screenshot.jpeg",
+            "title": "AI Image Generator",
+            "description": "Javascript app that leverages AI Based APIs to generate images based on user input. Express server and deployed via DigitalOcean with the help of NGinx",
+            "url": "https://ai-image-generator.nick-daly.me/"
+        },
+        {
+            "cover": "/portfolio/AI-Image-Generator/screenshot.jpeg",
+            "title": "AI Image Generator",
+            "description": "Javascript app that leverages AI Based APIs to generate images based on user input. Express server and deployed via DigitalOcean with the help of NGinx",
+            "url": "https://ai-image-generator.nick-daly.me/"
+        }
+    ]
+}
