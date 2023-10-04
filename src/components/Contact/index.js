@@ -4,13 +4,14 @@ import Loader from 'react-loaders';
 import { useState, useEffect, useRef } from 'react';
 import '../Layout/index.scss';
 import emailjs from '@emailjs/browser'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const form = useRef()
 
     useEffect(() => {
-      return setTimeout(() => {
+       setTimeout(() => {
         setLetterClass('text-animate-hover')
       }, 3000)
     }, [])
@@ -84,6 +85,23 @@ const Contact = () => {
               </ul>
             </form>
         </div>
+        </div>
+        <div className='info-map'>
+          Bushwick,
+          <br />
+          Brooklyn,
+          <br />
+          New York
+          <br />
+          <span>NDaly94@gmail.com</span>
+        </div>
+        <div className='map-wrap'>
+          <MapContainer center={[40.694274, -73.933339]} zoom={13}>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[40.694274, -73.933339]}>
+              <Popup>Nick lives here, come on over for some Cold Brew!</Popup>
+            </Marker>
+          </MapContainer>
         </div>
     </div>
             <Loader type="pacman" />
