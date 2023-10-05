@@ -87,8 +87,6 @@ const Contact = () => {
         </div>
         </div>
         <div className='info-map'>
-          Bushwick,
-          <br />
           Brooklyn,
           <br />
           New York
